@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id = "@+id/FrameLayout1"
+	android:gravity="center"
+	android:orientation="vertical" >
+	
+	
+	<TextView
+	    android:id = "@+id/question_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity = "center_horizontal"
+		android:textIsSelectable = "true"
+		android:padding="24dp" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity = "center_vertical|center_horizontal">
+
+	    <Button
+	        android:id="@+id/true_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/true_button" />
+
+	    <Button
+	        android:id="@+id/false_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/false_button"
+	        android:gravity="center" />
+	</LinearLayout>
+
+	<ImageButton
+	    android:id="@+id/prev_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:background="@null"
+	    android:contentDescription="@string/previous_button"
+	    android:gravity="bottom|left"
+	    android:padding="5dp"
+	    android:src="@drawable/arrow_left" />
+	
+	<ImageButton
+	    android:id="@+id/next_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom|right"
+	    android:background="@null"
+	    android:contentDescription="@string/next_button"
+	    android:gravity="bottom|right"
+	    android:padding="5dp"
+	    android:src="@drawable/arrow_right" />
+	
+</FrameLayout>
