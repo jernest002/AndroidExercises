@@ -16,11 +16,23 @@
         <activity
             android:name="com.example.geoquiz.QuizActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.geoquiz.MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.geoquiz.BookAppsActivity"
+            android:label="@string/title_activity_book_apps" >
+        </activity>
+        <activity
+            android:name="com.example.geoquiz.ExerciseAppsActivity"
+            android:label="@string/title_activity_exercise_apps" >
         </activity>
     </application>
 

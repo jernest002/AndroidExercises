@@ -1,6 +1,7 @@
 package com.example.geoquiz;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -20,6 +21,8 @@ public class QuizActivity extends Activity {
 	private ImageButton mNextButton;
 	private ImageButton mPrevButton;
 	private TextView mQuestionTextView;
+	
+	private Button mBackButton;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[] {
 			new TrueFalse(R.string.question_oceans, true),
@@ -72,6 +75,16 @@ public class QuizActivity extends Activity {
 			public void onClick(View v) {
 				mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
 				updateQuestion();
+			}
+		});
+		
+		mBackButton = (Button) findViewById(R.id.back_button);
+		mBackButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(QuizActivity.this, BookAppsActivity.class);
+				startActivity(i);
+				finish();
 			}
 		});
 		
