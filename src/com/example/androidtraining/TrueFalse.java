@@ -1,21 +1,16 @@
 package com.example.androidtraining;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 public class TrueFalse {
 	private int mQuestion;
 	private boolean mTrueQuestion;
 	private boolean mHasCheated;
-	
-	private int mData;
 	
 	public TrueFalse(int question, boolean trueQuestion, boolean hasCheated) {
 		mQuestion = question;
 		mTrueQuestion = trueQuestion;
 		mHasCheated = hasCheated;
 	}
-
+	
 	public boolean isHasCheated() {
 		return mHasCheated;
 	}

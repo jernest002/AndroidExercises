@@ -11,6 +11,7 @@ import android.widget.Button;
 public class BookAppsActivity extends Activity {
 
 	private Button mBookApp1;
+	private Button mBookApp2;
 	private Button mBackButton;
 	
 	@Override
@@ -34,6 +35,15 @@ public class BookAppsActivity extends Activity {
 				Intent i = new Intent(BookAppsActivity.this, MainMenuActivity.class);
 				startActivity(i);
 				finish();
+			}
+		});
+		
+		mBookApp2 = (Button) findViewById(R.id.book_app2_button);
+		mBookApp2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent i = new Intent(BookAppsActivity.this, Ch7_CrimeActivity.class);
+				startActivity(i);
 			}
 		});
 	}

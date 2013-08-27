@@ -7,7 +7,8 @@
     <string name="exit_button">Exit</string>
     <string name="dev_name">by John Ernest Guadalupe</string>
     <string name="back_button">Back</string>
-    <string name="book_app1">1. GeoQuiz(Chapter 1 &#8211; )</string>
+    <string name="book_app1">1. GeoQuiz(Chapter 1 &#8211; 6)</string>
+    <string name="book_app2">2. CriminalIntent(Chapter 7 &#8211; )</string>
 
     <!-- GeoQuiz Strings -->
     <!-- Chapter 1 -4 -->
@@ -34,11 +35,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_book_apps">Book Apps Activity</string>
     <string name="title_activity_exercise_apps">Exercise Apps Activity</string>
-    <!-- Chapter 5 - -->
+    <!-- Chapter 5 - 6 -->
     <string name="cheat_button">Cheat!</string>
     <string name="warning_text">Are you sure you want to do this?</string>
     <string name="show_answer_button">Show Answer</string>
     <string name="judgment_toast">Cheating is wrong.</string>
     <string name="title_activity_ch5___cheat">Ch5__CheatActivity</string>
+    <string name="title_activity_crime">CrimeActivity</string>
 
+	<!-- Chapter 7 -->
+	<string name="crime_title_hint">Enter a title for the crime</string>
+    	
 </resources>
