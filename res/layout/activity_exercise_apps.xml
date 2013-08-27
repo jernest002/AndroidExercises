@@ -15,14 +15,4 @@
         android:text="@string/from_spreadsheet_button"
         android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="22dp"
-        android:text="@string/back_button"
-        android:textSize="15sp" />
-
 </RelativeLayout>

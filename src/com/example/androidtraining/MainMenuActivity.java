@@ -38,13 +38,7 @@ public class MainMenuActivity extends Activity {
 			}
 		});
 		
-		mExitButton = (Button) findViewById(R.id.exit_button);
-		mExitButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				finish();
-			}
-		});
+		
 	}
 
 	@Override

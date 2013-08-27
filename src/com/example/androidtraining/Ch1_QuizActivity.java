@@ -25,7 +25,6 @@ public class Ch1_QuizActivity extends Activity {
 	private ImageButton mPrevButton;
 	private TextView mQuestionTextView;
 	
-	private Button mBackButton;
 	private Button mCheatButton;
 	
 	private boolean mIsCheater;
@@ -85,15 +84,6 @@ public class Ch1_QuizActivity extends Activity {
 			}
 		});
 		
-		mBackButton = (Button) findViewById(R.id.back_button);
-		mBackButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(Ch1_QuizActivity.this, BookAppsActivity.class);
-				startActivity(i);
-				finish();
-			}
-		});
 		
 		mCheatButton = (Button)findViewById(R.id.cheat_button);
 		mCheatButton.setOnClickListener(new View.OnClickListener() {

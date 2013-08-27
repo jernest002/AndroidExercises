@@ -12,7 +12,6 @@ public class BookAppsActivity extends Activity {
 
 	private Button mBookApp1;
 	private Button mBookApp2;
-	private Button mBackButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +27,6 @@ public class BookAppsActivity extends Activity {
 			}
 		});
 		
-		mBackButton = (Button) findViewById(R.id.back_button);
-		mBackButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(BookAppsActivity.this, MainMenuActivity.class);
-				startActivity(i);
-				finish();
-			}
-		});
 		
 		mBookApp2 = (Button) findViewById(R.id.book_app2_button);
 		mBookApp2.setOnClickListener(new View.OnClickListener() {

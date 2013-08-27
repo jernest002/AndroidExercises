@@ -34,15 +34,5 @@
         android:text="@string/book_app2"
         android:textSize="15sp" />
 
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app1_button"
-        android:layout_alignParentBottom="true"
-        android:text="@string/back_button"
-        android:textSize="15sp" />
-
-    
 
 </RelativeLayout>

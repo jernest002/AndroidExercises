@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="356dp"
+        android:layout_height="0dp"
         android:layout_weight="0.93"
         android:gravity="center"
         android:orientation="vertical" >
@@ -86,20 +86,6 @@
         
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|left"
-            android:text="@string/back_button"
-            android:textSize="15sp" />
-
-    </LinearLayout>
+   
 
 </LinearLayout>
