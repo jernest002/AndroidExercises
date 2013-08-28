@@ -1,5 +1,6 @@
 package com.example.androidtraining;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import android.content.Intent;
@@ -66,7 +67,7 @@ public class CrimeListFragment extends ListFragment {
 			
 			TextView dateTextView =
 					(TextView)convertView.findViewById(R.id.crime_list_item_dateTextView);
-			dateTextView.setText(c.getDate().toString());
+			dateTextView.setText(new SimpleDateFormat("EEEE, MMMM dd, yyyy hh:mm aaa").format(c.getDate()).toString());
 			
 			CheckBox solvedCheckBox =
 					(CheckBox)convertView.findViewById(R.id.crime_list_item_solvedCheckBox);

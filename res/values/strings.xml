@@ -55,4 +55,8 @@
 	
 	<!-- 	Chapter 9 - -->
 	<string name="crimes_title">Crimes</string>
+	
+	<!-- Chapter 12 -->
+	<string name="date_picker_title">Date of crime:</string>
+	<string name="time_picker_title">Time of crime:</string>
 </resources>

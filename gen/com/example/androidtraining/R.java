@@ -28,18 +28,21 @@ public final class R {
     public static final class id {
         public static final int Dev_Name=0x7f050008;
         public static final int FrameLayout1=0x7f050011;
-        public static final int action_settings=0x7f050018;
+        public static final int action_settings=0x7f05001b;
         public static final int answerTextView=0x7f050004;
         public static final int back_button=0x7f050012;
         public static final int book_app1_button=0x7f050002;
         public static final int book_app2_button=0x7f050003;
         public static final int cheat_button=0x7f05000e;
-        public static final int crime_date=0x7f050014;
-        public static final int crime_list_item_dateTextView=0x7f050017;
-        public static final int crime_list_item_solvedCheckBox=0x7f050016;
+        public static final int crime_date=0x7f050016;
+        public static final int crime_list_item_dateTextView=0x7f05001a;
+        public static final int crime_list_item_solvedCheckBox=0x7f050019;
         public static final int crime_list_item_titleTextView=0x7f050001;
-        public static final int crime_solved=0x7f050015;
-        public static final int crime_title=0x7f050013;
+        public static final int crime_solved=0x7f050018;
+        public static final int crime_time=0x7f050017;
+        public static final int crime_title=0x7f050015;
+        public static final int dialog_date_datePicker=0x7f050013;
+        public static final int dialog_time_timePicker=0x7f050014;
         public static final int exer1_3_button=0x7f050006;
         public static final int false_button=0x7f05000d;
         public static final int fragmentContainer=0x7f050007;
@@ -59,8 +62,10 @@ public final class R {
         public static final int activity_fragment=0x7f030003;
         public static final int activity_main_menu=0x7f030004;
         public static final int activity_quiz=0x7f030005;
-        public static final int fragment_crime=0x7f030006;
-        public static final int list_item_crime=0x7f030007;
+        public static final int dialog_date=0x7f030006;
+        public static final int dialog_time=0x7f030007;
+        public static final int fragment_crime=0x7f030008;
+        public static final int list_item_crime=0x7f030009;
     }
     public static final class menu {
         public static final int book_apps=0x7f080000;
@@ -90,6 +95,9 @@ public final class R {
         /**  	Chapter 9 - 
          */
         public static final int crimes_title=0x7f060025;
+        /**  Chapter 12 
+         */
+        public static final int date_picker_title=0x7f060026;
         public static final int dev_name=0x7f060003;
         /**  Android Exercises Strings 
          */
@@ -116,6 +124,7 @@ public final class R {
         public static final int question_oceans=0x7f060012;
         public static final int question_text=0x7f06000b;
         public static final int show_answer_button=0x7f06001d;
+        public static final int time_picker_title=0x7f060027;
         public static final int title_activity_book_apps=0x7f060019;
         public static final int title_activity_ch5___cheat=0x7f06001f;
         public static final int title_activity_crime=0x7f060020;
