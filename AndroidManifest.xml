@@ -38,14 +38,18 @@
             android:name="com.example.androidtraining.Ch5_CheatActivity"
             android:label="@string/title_activity_ch5___cheat" >
         </activity>
-        <activity 
-            android:name=".CrimePagerActivity"
-			android:label="@string/app_name">
-		</activity>
-        <activity 
-            android:name=".CrimeListActivity"
+        <activity
+            android:name="com.example.androidtraining.CrimePagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.CrimeListActivity"
             android:label="@string/title_activity_crime" >
-		</activity>
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.HelloMoonActivity"
+            android:label="@string/title_activity_hello_moon" >
+        </activity>
     </application>
 
 </manifest>
