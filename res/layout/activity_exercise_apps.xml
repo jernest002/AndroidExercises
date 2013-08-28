@@ -15,4 +15,15 @@
         android:text="@string/from_spreadsheet_button"
         android:textSize="22sp" />
 
+    <Button
+        android:id="@+id/exer1_3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crime_list_item_titleTextView"
+        android:layout_alignRight="@+id/crime_list_item_titleTextView"
+        android:layout_below="@+id/crime_list_item_titleTextView"
+        android:layout_marginTop="34dp"
+        android:gravity="left"
+        android:text="@string/exer1_3" />
+
 </RelativeLayout>

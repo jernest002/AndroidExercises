@@ -10,6 +10,9 @@
     <string name="book_app1">1. GeoQuiz(Chapter 1 &#8211; 6)</string>
     <string name="book_app2">2. CriminalIntent(Chapter 7 &#8211; )</string>
 
+	<!-- Android Exercises Strings -->
+	<string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField), \n 3. 1 View</string>
+    
     <!-- GeoQuiz Strings -->
     <!-- Chapter 1 -4 -->
     <string name="geoquiz">GeoQuiz</string>
@@ -43,12 +46,13 @@
     <string name="title_activity_ch5___cheat">Ch5__CheatActivity</string>
     <string name="title_activity_crime">CrimeActivity</string>
 
+	<!-- Criminal Intent Strings -->
 	<!-- Chapter 7 - 8 -->
 	<string name="crime_title_hint">Enter a title for the crime</string>
     <string name="crime_title_label">Title</string>
 	<string name="crime_details_label">Details</string>
 	<string name="crime_solved_label">Solved?</string>
 	
-<!-- 	Chapter 9 - -->
+	<!-- 	Chapter 9 - -->
 	<string name="crimes_title">Crimes</string>
 </resources>
