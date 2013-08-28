@@ -32,7 +32,7 @@ public class BookAppsActivity extends Activity {
 		mBookApp2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent i = new Intent(BookAppsActivity.this, Ch7_CrimeActivity.class);
+				Intent i = new Intent(BookAppsActivity.this, CrimeListActivity.class);
 				startActivity(i);
 			}
 		});

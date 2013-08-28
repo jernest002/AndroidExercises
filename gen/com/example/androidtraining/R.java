@@ -28,13 +28,16 @@ public final class R {
     public static final class id {
         public static final int Dev_Name=0x7f080006;
         public static final int FrameLayout1=0x7f08000f;
-        public static final int action_settings=0x7f080014;
+        public static final int action_settings=0x7f080016;
         public static final int answerTextView=0x7f080003;
         public static final int back_button=0x7f080010;
         public static final int book_app1_button=0x7f080001;
         public static final int book_app2_button=0x7f080002;
         public static final int cheat_button=0x7f08000c;
         public static final int crime_date=0x7f080012;
+        public static final int crime_list_item_dateTextView=0x7f080015;
+        public static final int crime_list_item_solvedCheckBox=0x7f080014;
+        public static final int crime_list_item_titleTextView=0x7f080000;
         public static final int crime_solved=0x7f080013;
         public static final int crime_title=0x7f080011;
         public static final int false_button=0x7f08000b;
@@ -45,17 +48,17 @@ public final class R {
         public static final int prev_button=0x7f08000d;
         public static final int question_text_view=0x7f080009;
         public static final int showAnswerButton=0x7f080004;
-        public static final int textView1=0x7f080000;
         public static final int true_button=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_book_apps=0x7f030000;
         public static final int activity_cheat=0x7f030001;
-        public static final int activity_crime=0x7f030002;
-        public static final int activity_exercise_apps=0x7f030003;
+        public static final int activity_exercise_apps=0x7f030002;
+        public static final int activity_fragment=0x7f030003;
         public static final int activity_main_menu=0x7f030004;
         public static final int activity_quiz=0x7f030005;
         public static final int fragment_crime=0x7f030006;
+        public static final int list_item_crime=0x7f030007;
     }
     public static final class menu {
         public static final int book_apps=0x7f070000;
@@ -81,6 +84,9 @@ public final class R {
          */
         public static final int crime_title_hint=0x7f050020;
         public static final int crime_title_label=0x7f050021;
+        /**  	Chapter 9 - 
+         */
+        public static final int crimes_title=0x7f050024;
         public static final int dev_name=0x7f050003;
         public static final int exit_button=0x7f050002;
         public static final int false_button=0x7f05000c;

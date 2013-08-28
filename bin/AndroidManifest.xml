@@ -42,6 +42,10 @@
             android:name="com.example.androidtraining.Ch7_CrimeActivity"
             android:label="@string/title_activity_crime" >
         </activity>
+        <activity 
+            android:name=".CrimeListActivity"
+            android:label="@string/title_activity_crime" >
+		</activity>
     </application>
 
 </manifest>
