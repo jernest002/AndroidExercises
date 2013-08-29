@@ -69,4 +69,11 @@
 	<string name="hellomoon_stop">Stop</string>
 	<string name="hellomoon_description">Neil Armstrong stepping onto the moon</string>
 	
+	<!-- Chapter 16 -->
+	<string name="new_crime">New Crime</string>
+	<string name="show_subtitle">Show Subtitle</string>
+	<string name="hide_subtitle">Hide Subtitle</string>
+	<string name="subtitle">If you see something, say something.</string>
+	<string name="delete_crime">Delete</string>
+	
 </resources>

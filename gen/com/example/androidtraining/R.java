@@ -25,6 +25,7 @@ public final class R {
         public static final int arrow_left=0x7f020001;
         public static final int arrow_right=0x7f020002;
         public static final int ic_launcher=0x7f020003;
+        public static final int ic_menu_add=0x7f020004;
     }
     public static final class id {
         public static final int Dev_Name=0x7f06000a;
@@ -54,6 +55,8 @@ public final class R {
         public static final int hellomoon_pauseButton=0x7f06001c;
         public static final int hellomoon_playButton=0x7f06001b;
         public static final int hellomoon_stopButton=0x7f06001d;
+        public static final int menu_item_new_crime=0x7f060021;
+        public static final int menu_item_show_subtitle=0x7f060022;
         public static final int next_button=0x7f060012;
         public static final int prev_button=0x7f060011;
         public static final int question_text_view=0x7f06000d;
@@ -80,9 +83,10 @@ public final class R {
         public static final int ch5___cheat=0x7f090001;
         public static final int crime=0x7f090002;
         public static final int exercise_apps=0x7f090003;
-        public static final int hello_moon=0x7f090004;
-        public static final int main_menu=0x7f090005;
-        public static final int quiz=0x7f090006;
+        public static final int fragment_crime_list=0x7f090004;
+        public static final int hello_moon=0x7f090005;
+        public static final int main_menu=0x7f090006;
+        public static final int quiz=0x7f090007;
     }
     public static final class raw {
         public static final int apollo_17_stroll=0x7f040000;
@@ -91,7 +95,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f07000b;
         public static final int app_name=0x7f07000a;
-        public static final int app_name_blah=0x7f070030;
+        public static final int app_name_blah=0x7f070035;
         public static final int back_button=0x7f070004;
         public static final int book_app1=0x7f070005;
         public static final int book_app2=0x7f070006;
@@ -113,6 +117,7 @@ public final class R {
         /**  Chapter 12 
          */
         public static final int date_picker_title=0x7f070027;
+        public static final int delete_crime=0x7f070033;
         public static final int dev_name=0x7f070003;
         /**  Android Exercises Strings 
          */
@@ -129,13 +134,17 @@ public final class R {
         public static final int geoquiz=0x7f070009;
         public static final int hello_world=0x7f070019;
         public static final int hellomoon_description=0x7f07002e;
-        public static final int hellomoon_image_description=0x7f07002f;
+        public static final int hellomoon_image_description=0x7f070034;
         public static final int hellomoon_pause=0x7f07002b;
         public static final int hellomoon_play=0x7f07002a;
         public static final int hellomoon_resume=0x7f07002c;
         public static final int hellomoon_stop=0x7f07002d;
+        public static final int hide_subtitle=0x7f070031;
         public static final int incorrect_toast=0x7f070012;
         public static final int judgment_toast=0x7f07001f;
+        /**  Chapter 16 
+         */
+        public static final int new_crime=0x7f07002f;
         public static final int next_button=0x7f07000f;
         public static final int previous_button=0x7f070010;
         public static final int question_africa=0x7f070015;
@@ -145,6 +154,8 @@ public final class R {
         public static final int question_oceans=0x7f070013;
         public static final int question_text=0x7f07000c;
         public static final int show_answer_button=0x7f07001e;
+        public static final int show_subtitle=0x7f070030;
+        public static final int subtitle=0x7f070032;
         public static final int time_picker_title=0x7f070028;
         public static final int title_activity_book_apps=0x7f07001a;
         public static final int title_activity_ch5___cheat=0x7f070020;
