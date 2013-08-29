@@ -27,35 +27,38 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int Dev_Name=0x7f060008;
-        public static final int FrameLayout1=0x7f060011;
-        public static final int action_settings=0x7f06001d;
-        public static final int answerTextView=0x7f060004;
-        public static final int back_button=0x7f060012;
+        public static final int Dev_Name=0x7f06000a;
+        public static final int FrameLayout1=0x7f060013;
+        public static final int action_settings=0x7f060020;
+        public static final int answerTextView=0x7f060005;
+        public static final int back_button=0x7f060014;
         public static final int book_app1_button=0x7f060002;
         public static final int book_app2_button=0x7f060003;
-        public static final int cheat_button=0x7f06000e;
-        public static final int crime_date=0x7f060016;
-        public static final int crime_list_item_dateTextView=0x7f06001c;
-        public static final int crime_list_item_solvedCheckBox=0x7f06001b;
+        public static final int book_app3_button=0x7f060004;
+        public static final int cheat_button=0x7f060010;
+        public static final int crime_date=0x7f060018;
+        public static final int crime_list_item_dateTextView=0x7f06001f;
+        public static final int crime_list_item_solvedCheckBox=0x7f06001e;
         public static final int crime_list_item_titleTextView=0x7f060001;
-        public static final int crime_solved=0x7f060018;
-        public static final int crime_time=0x7f060017;
-        public static final int crime_title=0x7f060015;
-        public static final int dialog_date_datePicker=0x7f060013;
-        public static final int dialog_time_timePicker=0x7f060014;
-        public static final int exer1_3_button=0x7f060006;
-        public static final int false_button=0x7f06000d;
-        public static final int fragmentContainer=0x7f060007;
-        public static final int from_book_button=0x7f06000a;
-        public static final int from_spreadsheet_button=0x7f060009;
-        public static final int hellomoon_playButton=0x7f060019;
-        public static final int hellomoon_stopButton=0x7f06001a;
-        public static final int next_button=0x7f060010;
-        public static final int prev_button=0x7f06000f;
-        public static final int question_text_view=0x7f06000b;
-        public static final int showAnswerButton=0x7f060005;
-        public static final int true_button=0x7f06000c;
+        public static final int crime_solved=0x7f06001a;
+        public static final int crime_time=0x7f060019;
+        public static final int crime_title=0x7f060017;
+        public static final int dialog_date_datePicker=0x7f060015;
+        public static final int dialog_time_timePicker=0x7f060016;
+        public static final int exer1_3_button=0x7f060007;
+        public static final int false_button=0x7f06000f;
+        public static final int fragmentContainer=0x7f060008;
+        public static final int from_book_button=0x7f06000c;
+        public static final int from_spreadsheet_button=0x7f06000b;
+        public static final int helloMoonFragment=0x7f060009;
+        public static final int hellomoon_pauseButton=0x7f06001c;
+        public static final int hellomoon_playButton=0x7f06001b;
+        public static final int hellomoon_stopButton=0x7f06001d;
+        public static final int next_button=0x7f060012;
+        public static final int prev_button=0x7f060011;
+        public static final int question_text_view=0x7f06000d;
+        public static final int showAnswerButton=0x7f060006;
+        public static final int true_button=0x7f06000e;
         public static final int viewPager=0x7f060000;
     }
     public static final class layout {
@@ -86,34 +89,36 @@ public final class R {
         public static final int one_small_step=0x7f040001;
     }
     public static final class string {
-        public static final int action_settings=0x7f07000a;
-        public static final int app_name=0x7f070009;
+        public static final int action_settings=0x7f07000b;
+        public static final int app_name=0x7f07000a;
+        public static final int app_name_blah=0x7f070030;
         public static final int back_button=0x7f070004;
         public static final int book_app1=0x7f070005;
         public static final int book_app2=0x7f070006;
+        public static final int book_app3=0x7f070007;
         /**  Chapter 5 - 6 
          */
-        public static final int cheat_button=0x7f07001b;
-        public static final int correct_toast=0x7f070010;
-        public static final int crime_details_label=0x7f070023;
-        public static final int crime_solved_label=0x7f070024;
+        public static final int cheat_button=0x7f07001c;
+        public static final int correct_toast=0x7f070011;
+        public static final int crime_details_label=0x7f070024;
+        public static final int crime_solved_label=0x7f070025;
         /**  Criminal Intent Strings 
  Chapter 7 - 8 
          */
-        public static final int crime_title_hint=0x7f070021;
-        public static final int crime_title_label=0x7f070022;
+        public static final int crime_title_hint=0x7f070022;
+        public static final int crime_title_label=0x7f070023;
         /**  Chapter 9 - 
          */
-        public static final int crimes_title=0x7f070025;
+        public static final int crimes_title=0x7f070026;
         /**  Chapter 12 
          */
-        public static final int date_picker_title=0x7f070026;
+        public static final int date_picker_title=0x7f070027;
         public static final int dev_name=0x7f070003;
         /**  Android Exercises Strings 
          */
-        public static final int exer1_3=0x7f070007;
+        public static final int exer1_3=0x7f070008;
         public static final int exit_button=0x7f070002;
-        public static final int false_button=0x7f07000d;
+        public static final int false_button=0x7f07000e;
         /**  Main Menu Strings 
          */
         public static final int from_book_button=0x7f070000;
@@ -121,33 +126,36 @@ public final class R {
         /**  GeoQuiz Strings 
  Chapter 1 -4 
          */
-        public static final int geoquiz=0x7f070008;
-        public static final int hello_world=0x7f070018;
-        public static final int hellomoon_description=0x7f07002b;
+        public static final int geoquiz=0x7f070009;
+        public static final int hello_world=0x7f070019;
+        public static final int hellomoon_description=0x7f07002e;
+        public static final int hellomoon_image_description=0x7f07002f;
+        public static final int hellomoon_pause=0x7f07002b;
+        public static final int hellomoon_play=0x7f07002a;
+        public static final int hellomoon_resume=0x7f07002c;
+        public static final int hellomoon_stop=0x7f07002d;
+        public static final int incorrect_toast=0x7f070012;
+        public static final int judgment_toast=0x7f07001f;
+        public static final int next_button=0x7f07000f;
+        public static final int previous_button=0x7f070010;
+        public static final int question_africa=0x7f070015;
+        public static final int question_americas=0x7f070016;
+        public static final int question_asia=0x7f070017;
+        public static final int question_mideast=0x7f070014;
+        public static final int question_oceans=0x7f070013;
+        public static final int question_text=0x7f07000c;
+        public static final int show_answer_button=0x7f07001e;
+        public static final int time_picker_title=0x7f070028;
+        public static final int title_activity_book_apps=0x7f07001a;
+        public static final int title_activity_ch5___cheat=0x7f070020;
+        public static final int title_activity_crime=0x7f070021;
+        public static final int title_activity_exercise_apps=0x7f07001b;
         /**  Chapter 13 
          */
-        public static final int hellomoon_play=0x7f070029;
-        public static final int hellomoon_stop=0x7f07002a;
-        public static final int incorrect_toast=0x7f070011;
-        public static final int judgment_toast=0x7f07001e;
-        public static final int next_button=0x7f07000e;
-        public static final int previous_button=0x7f07000f;
-        public static final int question_africa=0x7f070014;
-        public static final int question_americas=0x7f070015;
-        public static final int question_asia=0x7f070016;
-        public static final int question_mideast=0x7f070013;
-        public static final int question_oceans=0x7f070012;
-        public static final int question_text=0x7f07000b;
-        public static final int show_answer_button=0x7f07001d;
-        public static final int time_picker_title=0x7f070027;
-        public static final int title_activity_book_apps=0x7f070019;
-        public static final int title_activity_ch5___cheat=0x7f07001f;
-        public static final int title_activity_crime=0x7f070020;
-        public static final int title_activity_exercise_apps=0x7f07001a;
-        public static final int title_activity_hello_moon=0x7f070028;
-        public static final int title_activity_main_menu=0x7f070017;
-        public static final int true_button=0x7f07000c;
-        public static final int warning_text=0x7f07001c;
+        public static final int title_activity_hello_moon=0x7f070029;
+        public static final int title_activity_main_menu=0x7f070018;
+        public static final int true_button=0x7f07000d;
+        public static final int warning_text=0x7f07001d;
     }
     public static final class style {
         /** 

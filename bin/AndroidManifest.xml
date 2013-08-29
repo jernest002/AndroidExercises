@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.androidtraining.Ch1_QuizActivity"
+            android:name="com.example.androidtraining.QuizActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -35,7 +35,7 @@
             android:label="@string/title_activity_exercise_apps" >
         </activity>
         <activity
-            android:name="com.example.androidtraining.Ch5_CheatActivity"
+            android:name="com.example.androidtraining.CheatActivity"
             android:label="@string/title_activity_ch5___cheat" >
         </activity>
         <activity
