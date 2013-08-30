@@ -20,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/crime_list_item_titleTextView"
-        android:layout_alignRight="@+id/crime_list_item_titleTextView"
         android:layout_below="@+id/crime_list_item_titleTextView"
         android:layout_marginTop="34dp"
         android:gravity="left"

@@ -12,7 +12,7 @@
     <string name="book_app3">3. HelloMoon(Chapter 13 &#8211; 15)</string>
 
     <!-- Android Exercises Strings -->
-    <string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField, Picker), \n 3. 1 View</string>
+    <string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField, Picker), \n 3. 1 View \n 4. Simple Menu \n 5. Create Context Menu</string>
 
     <!-- GeoQuiz Strings -->
     <!-- Chapter 1 -4 -->
