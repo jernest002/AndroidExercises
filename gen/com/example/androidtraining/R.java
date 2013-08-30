@@ -24,8 +24,9 @@ public final class R {
         public static final int armstrong_on_moon=0x7f020000;
         public static final int arrow_left=0x7f020001;
         public static final int arrow_right=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int ic_menu_add=0x7f020004;
+        public static final int background_activated=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int ic_menu_add=0x7f020005;
     }
     public static final class id {
         public static final int Dev_Name=0x7f06000a;
@@ -55,8 +56,10 @@ public final class R {
         public static final int hellomoon_pauseButton=0x7f06001c;
         public static final int hellomoon_playButton=0x7f06001b;
         public static final int hellomoon_stopButton=0x7f06001d;
-        public static final int menu_item_new_crime=0x7f060021;
-        public static final int menu_item_show_subtitle=0x7f060022;
+        public static final int menu_item_delete_crime=0x7f060021;
+        public static final int menu_item_delete_crime_single=0x7f060022;
+        public static final int menu_item_new_crime=0x7f060023;
+        public static final int menu_item_show_subtitle=0x7f060024;
         public static final int next_button=0x7f060012;
         public static final int prev_button=0x7f060011;
         public static final int question_text_view=0x7f06000d;
@@ -82,11 +85,13 @@ public final class R {
         public static final int book_apps=0x7f090000;
         public static final int ch5___cheat=0x7f090001;
         public static final int crime=0x7f090002;
-        public static final int exercise_apps=0x7f090003;
-        public static final int fragment_crime_list=0x7f090004;
-        public static final int hello_moon=0x7f090005;
-        public static final int main_menu=0x7f090006;
-        public static final int quiz=0x7f090007;
+        public static final int crime_list_item_context=0x7f090003;
+        public static final int exercise_apps=0x7f090004;
+        public static final int fragment_crime=0x7f090005;
+        public static final int fragment_crime_list=0x7f090006;
+        public static final int hello_moon=0x7f090007;
+        public static final int main_menu=0x7f090008;
+        public static final int quiz=0x7f090009;
     }
     public static final class raw {
         public static final int apollo_17_stroll=0x7f040000;
