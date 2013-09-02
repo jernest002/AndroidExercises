@@ -66,6 +66,15 @@
         <activity
             android:name="com.example.androidtraining.NerdLauncherActivity"
             android:label="@string/title_activity_nerd_launcher" >
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.RemoteControlActivity"
+            android:label="@string/title_activity_remote_control_actvity" 
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

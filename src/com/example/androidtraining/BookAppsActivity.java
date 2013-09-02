@@ -13,6 +13,8 @@ public class BookAppsActivity extends Activity {
 	private Button mBookApp1;
 	private Button mBookApp2;
 	private Button mBookApp3;
+	private Button mBookApp4;
+	private Button mBookApp5;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,24 @@ public class BookAppsActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(BookAppsActivity.this, HelloMoonActivity.class);
+				startActivity(i);
+			}
+		});
+		
+		mBookApp4 = (Button) findViewById(R.id.book_app4_button);
+		mBookApp4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(BookAppsActivity.this, NerdLauncherActivity.class);
+				startActivity(i);
+			}
+		});
+		
+		mBookApp5 = (Button) findViewById(R.id.book_app5_button);
+		mBookApp5.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(BookAppsActivity.this, RemoteControlActivity.class);
 				startActivity(i);
 			}
 		});
