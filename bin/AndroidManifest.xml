@@ -7,9 +7,11 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-	<uses-permission android:name="android.permission.CAMERA" />
-	<uses-feature android:name="android.hardware.camera" />
-	
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -43,8 +45,9 @@
         <activity
             android:name="com.example.androidtraining.CrimePagerActivity"
             android:label="@string/app_name" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-				android:value=".CrimeListActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CrimeListActivity" />
         </activity>
         <activity
             android:name="com.example.androidtraining.CrimeListActivity"
@@ -54,12 +57,16 @@
             android:name="com.example.androidtraining.HelloMoonActivity"
             android:label="@string/title_activity_hello_moon" >
         </activity>
-        <activity 
-            android:name=".CrimeCameraActivity"
+        <activity
+            android:name="com.example.androidtraining.CrimeCameraActivity"
             android:exported="true"
-			android:screenOrientation="landscape"
-			android:label="@string/app_name">
-		</activity>
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.NerdLauncherActivity"
+            android:label="@string/title_activity_nerd_launcher" >
+        </activity>
     </application>
 
 </manifest>
