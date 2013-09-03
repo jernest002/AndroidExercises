@@ -9,6 +9,9 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -26,6 +29,8 @@ public class PhotoGalleryFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setRetainInstance(true);
+		setHasOptionsMenu(true);
+		
 		new FetchItemsTask().execute();
 		
 		mThumbnailThread = new ThumbnailDownloader(new Handler());
@@ -64,6 +69,25 @@ public class PhotoGalleryFragment extends Fragment {
 		mThumbnailThread.clearQueue();
 	}
 	
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		inflater.inflate(R.menu.fragment_photo_gallery, menu);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.menu_item_search:
+				getActivity().onSearchRequested();
+				return true;
+			case R.id.menu_item_clear:
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+	
 	void setupAdapter() {
 		if (getActivity() == null || mGridView == null) return;
 		
@@ -76,9 +100,16 @@ public class PhotoGalleryFragment extends Fragment {
 	
 	private class FetchItemsTask extends AsyncTask<Void,Void,ArrayList<GalleryItem>> {
 
+		@SuppressWarnings("unused")
 		@Override
 		protected ArrayList<GalleryItem> doInBackground(Void... params) {
-			return new FlickrFetchr().fetchItems();
+			String query = "android"; // Just for testing
+			
+			if (query != null) {
+				return new FlickrFetchr().search(query);
+			} else {
+				return new FlickrFetchr().fetchItems();
+			}
 		}
 		
 		@Override

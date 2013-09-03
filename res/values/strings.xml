@@ -97,5 +97,9 @@
     <string name="title_activity_nerd_launcher">NerdLauncher</string>
     <string name="title_activity_remote_control_actvity">RemoteControlActvity</string>
     <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
-
+	
+	<!-- Chapter 28 -->
+	<string name="search_hint">Search Flickr</string>
+	<string name="search">Search</string>
+	<string name="clear_search">Clear Search</string>
 </resources>
