@@ -60,5 +60,14 @@
         android:layout_below="@+id/book_app4_button"
         android:text="@string/book_app5"
         android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/book_app6_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/book_app5_button"
+        android:layout_below="@+id/book_app5_button"
+        android:text="@string/book_app6"
+        android:textSize="15sp" />
     
 </RelativeLayout>
