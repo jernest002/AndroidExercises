@@ -89,7 +89,9 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.androidtraining.SingleFragmentActivity" />
+            
         </activity>
+        <service android:name=".PollService" />
     </application>
 
 </manifest>
