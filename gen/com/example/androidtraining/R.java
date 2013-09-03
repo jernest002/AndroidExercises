@@ -93,6 +93,7 @@ public final class R {
         public static final int menu_item_new_crime=0x7f070034;
         public static final int menu_item_search=0x7f070036;
         public static final int menu_item_show_subtitle=0x7f070035;
+        public static final int menu_item_toggle_polling=0x7f070038;
         public static final int next_button=0x7f070015;
         public static final int prev_button=0x7f070014;
         public static final int question_text_view=0x7f070010;
@@ -146,7 +147,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f08000f;
         public static final int app_name=0x7f08000e;
-        public static final int app_name_blah=0x7f08004a;
+        public static final int app_name_blah=0x7f08004e;
         public static final int back_button=0x7f080004;
         public static final int book_app1=0x7f080005;
         public static final int book_app2=0x7f080006;
@@ -201,7 +202,7 @@ public final class R {
         public static final int geoquiz=0x7f08000d;
         public static final int hello_world=0x7f08001d;
         public static final int hellomoon_description=0x7f080033;
-        public static final int hellomoon_image_description=0x7f080049;
+        public static final int hellomoon_image_description=0x7f08004d;
         public static final int hellomoon_pause=0x7f080030;
         public static final int hellomoon_play=0x7f08002f;
         public static final int hellomoon_resume=0x7f080031;
@@ -212,6 +213,8 @@ public final class R {
         /**  Chapter 16 
          */
         public static final int new_crime=0x7f080034;
+        public static final int new_pictures_text=0x7f08004c;
+        public static final int new_pictures_title=0x7f08004b;
         public static final int next_button=0x7f080013;
         public static final int previous_button=0x7f080014;
         public static final int question_africa=0x7f080019;
@@ -227,6 +230,10 @@ public final class R {
         public static final int send_report=0x7f080042;
         public static final int show_answer_button=0x7f080022;
         public static final int show_subtitle=0x7f080035;
+        /**  Chapter 29 
+         */
+        public static final int start_polling=0x7f080049;
+        public static final int stop_polling=0x7f08004a;
         public static final int subtitle=0x7f080037;
         /**  Chapter 20 
          */
