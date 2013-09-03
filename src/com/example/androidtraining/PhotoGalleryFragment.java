@@ -45,13 +45,17 @@ public class PhotoGalleryFragment extends Fragment {
 		}
 	}
 	
-	class FetchItemsTask extends AsyncTask<Void,Void,Void>{
+	private class FetchItemsTask extends AsyncTask<Void,Void,ArrayList<GalleryItem>> {
 
 		@Override
-		protected Void doInBackground(Void... params) {
-			new FlickrFetchr().fetchItems();
-			return null;
+		protected ArrayList<GalleryItem> doInBackground(Void... params) {
+			return new FlickrFetchr().fetchItems();
 		}
 		
+		@Override
+		protected void onPostExecute(ArrayList<GalleryItem> items) {
+			mItems = items;
+			setupAdapter();
+		}
 	}
 }
