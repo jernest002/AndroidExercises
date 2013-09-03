@@ -242,10 +242,10 @@ public class CrimeFragment extends Fragment {
 			public void onClick(View v) {
 				
 				AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
-				alert.setTitle("Send Report?");
-				alert.setMessage("You know you want to");
-				
-				alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+				alert.setTitle("Send Report?")
+				 .setCancelable(false)
+				 .setMessage("You know you want to")
+				 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						Intent i = new Intent(Intent.ACTION_SEND);
 						i.setType("text/plain");
@@ -255,16 +255,14 @@ public class CrimeFragment extends Fragment {
 						i = Intent.createChooser(i, getString(R.string.send_report));
 						startActivity(i);
 					  }
-				});
-
-				alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+				})
+				 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 					 public void onClick(DialogInterface dialog, int whichButton) {
 					   // Canceled.
 						 dialog.cancel();
 					  }
-				});
-
-				alert.show();
+				})
+				 .show();
 			}
 		});
 		

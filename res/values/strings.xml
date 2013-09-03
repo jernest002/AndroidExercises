@@ -11,12 +11,12 @@
     <string name="book_app2">2. CriminalIntent(Chapter 7 &#8211; 12) (Chapter 16 &#8211; 22)</string>
     <string name="book_app3">3. HelloMoon(Chapter 13 &#8211; 15)</string>
     <string name="book_app4">4. NerdLauncherActivity(Chapter 23)</string>
-	<string name="book_app5">5. RemoteControlActivity(Chapter 24)</string>
-	
+    <string name="book_app5">5. RemoteControlActivity(Chapter 24)</string>
+
     <!-- Android Exercises Strings -->
     <string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField, Picker), \n 3. 1 View \n 4. Simple Menu \n 5. Create Context Menu</string>
-	<string name= "dialog_ok_cancel">Are you sure you want to exit?</string>
-	
+    <string name="dialog_ok_cancel">Are you sure you want to exit?</string>
+
     <!-- GeoQuiz Strings -->
     <!-- Chapter 1 -4 -->
     <string name="geoquiz">GeoQuiz</string>
@@ -95,5 +95,6 @@
     <string name="send_report">Send crime report via</string>
     <string name="title_activity_nerd_launcher">NerdLauncher</string>
     <string name="title_activity_remote_control_actvity">RemoteControlActvity</string>
+    <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
 
 </resources>

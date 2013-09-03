@@ -44,7 +44,7 @@ public final class R {
     public static final class id {
         public static final int Dev_Name=0x7f06000c;
         public static final int FrameLayout1=0x7f060015;
-        public static final int action_settings=0x7f06002e;
+        public static final int action_settings=0x7f06002f;
         public static final int answerTextView=0x7f060007;
         public static final int back_button=0x7f060016;
         public static final int book_app1_button=0x7f060002;
@@ -60,8 +60,8 @@ public final class R {
         public static final int crime_date=0x7f06001d;
         public static final int crime_imageButton=0x7f06001b;
         public static final int crime_imageView=0x7f06001a;
-        public static final int crime_list_item_dateTextView=0x7f06002d;
-        public static final int crime_list_item_solvedCheckBox=0x7f06002c;
+        public static final int crime_list_item_dateTextView=0x7f06002e;
+        public static final int crime_list_item_solvedCheckBox=0x7f06002d;
         public static final int crime_list_item_titleTextView=0x7f060001;
         public static final int crime_reportButton=0x7f060021;
         public static final int crime_solved=0x7f06001f;
@@ -74,19 +74,20 @@ public final class R {
         public static final int exer1_3_button=0x7f060009;
         public static final int false_button=0x7f060011;
         public static final int fragmentContainer=0x7f06000a;
-        public static final int fragment_remote_control_selectedTextView=0x7f06002a;
-        public static final int fragment_remote_control_tableLayout=0x7f060029;
-        public static final int fragment_remote_control_workingTextView=0x7f06002b;
+        public static final int fragment_remote_control_selectedTextView=0x7f06002b;
+        public static final int fragment_remote_control_tableLayout=0x7f06002a;
+        public static final int fragment_remote_control_workingTextView=0x7f06002c;
         public static final int from_book_button=0x7f06000e;
         public static final int from_spreadsheet_button=0x7f06000d;
+        public static final int gridView=0x7f060029;
         public static final int helloMoonFragment=0x7f06000b;
         public static final int hellomoon_pauseButton=0x7f060027;
         public static final int hellomoon_playButton=0x7f060026;
         public static final int hellomoon_stopButton=0x7f060028;
-        public static final int menu_item_delete_crime=0x7f06002f;
-        public static final int menu_item_delete_crime_single=0x7f060030;
-        public static final int menu_item_new_crime=0x7f060031;
-        public static final int menu_item_show_subtitle=0x7f060032;
+        public static final int menu_item_delete_crime=0x7f060030;
+        public static final int menu_item_delete_crime_single=0x7f060031;
+        public static final int menu_item_new_crime=0x7f060032;
+        public static final int menu_item_show_subtitle=0x7f060033;
         public static final int next_button=0x7f060014;
         public static final int prev_button=0x7f060013;
         public static final int question_text_view=0x7f06000f;
@@ -101,7 +102,7 @@ public final class R {
         public static final int activity_fragment=0x7f030003;
         public static final int activity_hello_moon=0x7f030004;
         public static final int activity_main_menu=0x7f030005;
-        public static final int activity_masterdetail=0x7f030012;
+        public static final int activity_masterdetail=0x7f030013;
         public static final int activity_nerd_launcher=0x7f030006;
         public static final int activity_quiz=0x7f030007;
         public static final int activity_twopane=0x7f030008;
@@ -112,8 +113,9 @@ public final class R {
         public static final int fragment_crime=0x7f03000d;
         public static final int fragment_crime_camera=0x7f03000e;
         public static final int fragment_hello_moon=0x7f03000f;
-        public static final int fragment_remote_control=0x7f030010;
-        public static final int list_item_crime=0x7f030011;
+        public static final int fragment_photo_gallery=0x7f030010;
+        public static final int fragment_remote_control=0x7f030011;
+        public static final int list_item_crime=0x7f030012;
     }
     public static final class menu {
         public static final int book_apps=0x7f090000;
@@ -126,8 +128,9 @@ public final class R {
         public static final int hello_moon=0x7f090007;
         public static final int main_menu=0x7f090008;
         public static final int nerd_launcher=0x7f090009;
-        public static final int quiz=0x7f09000a;
-        public static final int remote_control_actvity=0x7f09000b;
+        public static final int photo_gallery=0x7f09000a;
+        public static final int quiz=0x7f09000b;
+        public static final int remote_control_actvity=0x7f09000c;
     }
     public static final class raw {
         public static final int apollo_17_stroll=0x7f040000;
@@ -136,7 +139,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f07000e;
         public static final int app_name=0x7f07000d;
-        public static final int app_name_blah=0x7f070045;
+        public static final int app_name_blah=0x7f070046;
         public static final int back_button=0x7f070004;
         public static final int book_app1=0x7f070005;
         public static final int book_app2=0x7f070006;
@@ -189,7 +192,7 @@ public final class R {
         public static final int geoquiz=0x7f07000c;
         public static final int hello_world=0x7f07001c;
         public static final int hellomoon_description=0x7f070032;
-        public static final int hellomoon_image_description=0x7f070044;
+        public static final int hellomoon_image_description=0x7f070045;
         public static final int hellomoon_pause=0x7f07002f;
         public static final int hellomoon_play=0x7f07002e;
         public static final int hellomoon_resume=0x7f070030;
@@ -225,6 +228,7 @@ public final class R {
         public static final int title_activity_hello_moon=0x7f07002d;
         public static final int title_activity_main_menu=0x7f07001b;
         public static final int title_activity_nerd_launcher=0x7f070042;
+        public static final int title_activity_photo_gallery=0x7f070044;
         public static final int title_activity_remote_control_actvity=0x7f070043;
         public static final int true_button=0x7f070010;
         public static final int warning_text=0x7f070020;

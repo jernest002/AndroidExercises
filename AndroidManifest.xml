@@ -73,8 +73,16 @@
         </activity>
         <activity
             android:name="com.example.androidtraining.RemoteControlActivity"
-            android:label="@string/title_activity_remote_control_actvity" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_remote_control_actvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.PhotoGalleryActivity"
+            android:label="@string/title_activity_photo_gallery"
+            android:parentActivityName="com.example.androidtraining.SingleFragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining.SingleFragmentActivity" />
         </activity>
     </application>
 
