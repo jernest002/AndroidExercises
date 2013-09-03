@@ -15,7 +15,8 @@
 	
     <!-- Android Exercises Strings -->
     <string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField, Picker), \n 3. 1 View \n 4. Simple Menu \n 5. Create Context Menu</string>
-
+	<string name= "dialog_ok_cancel">Are you sure you want to exit?</string>
+	
     <!-- GeoQuiz Strings -->
     <!-- Chapter 1 -4 -->
     <string name="geoquiz">GeoQuiz</string>
@@ -62,6 +63,7 @@
     <!-- Chapter 12 -->
     <string name="date_picker_title">Date of crime:</string>
     <string name="time_picker_title">Time of crime:</string>
+    <string name="cancel_button">Cancel</string>
 
     <!-- Chapter 13 -->
     <string name="title_activity_hello_moon">HelloMoon</string>

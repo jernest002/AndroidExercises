@@ -5,7 +5,8 @@ import java.util.ArrayList;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -24,6 +25,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CrimeListFragment extends ListFragment {
 	
@@ -73,7 +75,6 @@ public class CrimeListFragment extends ListFragment {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		// Get the Crime from the adapter
 		Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
-
 		mCallbacks.onCrimeSelected(c);
 	}
 	

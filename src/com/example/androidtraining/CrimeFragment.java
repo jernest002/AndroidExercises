@@ -6,6 +6,8 @@ import java.util.UUID;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -238,13 +240,31 @@ public class CrimeFragment extends Fragment {
 		Button reportButton = (Button)v.findViewById(R.id.crime_reportButton);
 		reportButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				Intent i = new Intent(Intent.ACTION_SEND);
-				i.setType("text/plain");
-				i.putExtra(Intent.EXTRA_TEXT, getCrimeReport());
-				i.putExtra(Intent.EXTRA_SUBJECT,
-						getString(R.string.crime_report_subject));
-				i = Intent.createChooser(i, getString(R.string.send_report));
-				startActivity(i);
+				
+				AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+				alert.setTitle("Send Report?");
+				alert.setMessage("You know you want to");
+				
+				alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int whichButton) {
+						Intent i = new Intent(Intent.ACTION_SEND);
+						i.setType("text/plain");
+						i.putExtra(Intent.EXTRA_TEXT, getCrimeReport());
+						i.putExtra(Intent.EXTRA_SUBJECT,
+								getString(R.string.crime_report_subject));
+						i = Intent.createChooser(i, getString(R.string.send_report));
+						startActivity(i);
+					  }
+				});
+
+				alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+					 public void onClick(DialogInterface dialog, int whichButton) {
+					   // Canceled.
+						 dialog.cancel();
+					  }
+				});
+
+				alert.show();
 			}
 		});
 		
