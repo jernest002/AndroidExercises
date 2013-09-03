@@ -18,6 +18,7 @@ import android.util.Log;
 public class FlickrFetchr {
 	
 	public static final String TAG = "FlickrFetchr";
+	public static final String PREF_SEARCH_QUERY = "searchQuery";
 	private static final String ENDPOINT = "http://api.flickr.com/services/rest/";
 	private static final String API_KEY = "851289774d3019ca3ee179f3e764e0ec";
 	private static final String METHOD_GET_RECENT = "flickr.photos.getRecent";
