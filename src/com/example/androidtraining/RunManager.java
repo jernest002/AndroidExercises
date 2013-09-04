@@ -5,10 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
+import android.util.Log;
 
 public class RunManager {
 	private static final String TAG = "RunManager";
-	
+	private static final String TEST_PROVIDER = "TEST_PROVIDER";
 	public static final String ACTION_LOCATION =
 			"com.bignerdranch.android.runtracker.ACTION_LOCATION";
 	private static RunManager sRunManager;
@@ -39,6 +40,12 @@ public class RunManager {
 		
 	public void startLocationUpdates() {
 		String provider = LocationManager.GPS_PROVIDER;
+		// If you have the test provider and it's enabled, use it
+		if (mLocationManager.getProvider(TEST_PROVIDER) != null &&
+				mLocationManager.isProviderEnabled(TEST_PROVIDER)) {
+			provider = TEST_PROVIDER;
+		}
+		Log.d(TAG, "Using provider " + provider);
 		
 		// Get the last known location and broadcast it if you have one
 		Location lastKnown = mLocationManager.getLastKnownLocation(provider);
