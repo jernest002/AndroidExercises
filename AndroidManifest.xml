@@ -121,7 +121,7 @@
                 <action android:name="com.bignerdranch.android.photogallery.SHOW_NOTIFICATION" />
             </intent-filter>
         </receiver>
-		<receiver android:name=".LocationReceiver"
+		<receiver android:name=".TrackingLocationReceiver"
 			android:exported="false">
 			<intent-filter>
 				<action android:name="com.bignerdranch.android.runtracker.ACTION_LOCATION"/>
