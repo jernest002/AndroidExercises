@@ -16,6 +16,7 @@ public class BookAppsActivity extends Activity {
 	private Button mBookApp4;
 	private Button mBookApp5;
 	private Button mBookApp6;
+	private Button mBookApp7;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,14 @@ public class BookAppsActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(BookAppsActivity.this, PhotoGalleryActivity.class);
+				startActivity(i);
+			}
+		});
+		mBookApp7 = (Button) findViewById(R.id.book_app7_button);
+		mBookApp7.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(BookAppsActivity.this, DragAndDrawActivity.class);
 				startActivity(i);
 			}
 		});

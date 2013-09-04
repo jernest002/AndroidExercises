@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".BookAppsActivity" >
 
     <TextView
@@ -19,8 +20,6 @@
         android:id="@+id/book_app1_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/crime_list_item_titleTextView"
-        android:layout_below="@+id/crime_list_item_titleTextView"
         android:layout_marginTop="23dp"
         android:text="@string/book_app1"
         android:textSize="15sp" />
@@ -29,8 +28,6 @@
         android:id="@+id/book_app2_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app1_button"
-        android:layout_below="@+id/book_app1_button"
         android:text="@string/book_app2"
         android:textSize="15sp" />
 
@@ -38,8 +35,6 @@
         android:id="@+id/book_app3_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app2_button"
-        android:layout_below="@+id/book_app2_button"
         android:text="@string/book_app3"
         android:textSize="15sp" />
 
@@ -47,8 +42,6 @@
         android:id="@+id/book_app4_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app3_button"
-        android:layout_below="@+id/book_app3_button"
         android:text="@string/book_app4"
         android:textSize="15sp" />
 
@@ -56,8 +49,6 @@
         android:id="@+id/book_app5_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app4_button"
-        android:layout_below="@+id/book_app4_button"
         android:text="@string/book_app5"
         android:textSize="15sp" />
 
@@ -65,9 +56,13 @@
         android:id="@+id/book_app6_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/book_app5_button"
-        android:layout_below="@+id/book_app5_button"
         android:text="@string/book_app6"
         android:textSize="15sp" />
+    <Button
+        android:id="@+id/book_app7_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_app7"
+        android:textSize="15sp" />
     
-</RelativeLayout>
+</LinearLayout>

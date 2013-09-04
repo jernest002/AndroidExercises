@@ -12,8 +12,9 @@
     <string name="book_app3">3. HelloMoon(Chapter 13 &#8211; 15)</string>
     <string name="book_app4">4. NerdLauncherActivity(Chapter 23)</string>
     <string name="book_app5">5. RemoteControlActivity(Chapter 24 &#8211; 25)</string>
-	<string name="book_app6">6. PhotoGalleryActivity(Chapter 26 &#8211; )</string>
-	
+    <string name="book_app6">6. PhotoGalleryActivity(Chapter 26 &#8211; 31)</string>
+    <string name="book_app7">7. DragAndDrawActivity(Chapter 32 &#8211; )</string>
+
     <!-- Android Exercises Strings -->
     <string name="exer1_3">1. Layout Elements, \n 2. Input Controls\n\t\t(Button, TextField, Picker), \n 3. 1 View \n 4. Simple Menu \n 5. Create Context Menu \n 6. Create AlertDialog \n 7. JSONParsing</string>
     <string name="dialog_ok_cancel">Are you sure you want to exit?</string>
@@ -97,15 +98,17 @@
     <string name="title_activity_nerd_launcher">NerdLauncher</string>
     <string name="title_activity_remote_control_actvity">RemoteControlActvity</string>
     <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
-	
-	<!-- Chapter 28 -->
-	<string name="search_hint">Search Flickr</string>
-	<string name="search">Search</string>
-	<string name="clear_search">Clear Search</string>
-	
-	<!-- Chapter 29 -->
-	<string name="start_polling">Poll for new pictures</string>
-	<string name="stop_polling">Stop polling</string>
-	<string name="new_pictures_title">New PhotoGallery Pictures</string>
-	<string name="new_pictures_text">You have new pictures in PhotoGallery.</string>
+
+    <!-- Chapter 28 -->
+    <string name="search_hint">Search Flickr</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear Search</string>
+
+    <!-- Chapter 29 -->
+    <string name="start_polling">Poll for new pictures</string>
+    <string name="stop_polling">Stop polling</string>
+    <string name="new_pictures_title">New PhotoGallery Pictures</string>
+    <string name="new_pictures_text">You have new pictures in PhotoGallery.</string>
+    <string name="title_activity_drag_and_draw">DragAndDrawActivity</string>
+
 </resources>
