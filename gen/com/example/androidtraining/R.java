@@ -93,6 +93,7 @@ public final class R {
         public static final int menu_item_delete_crime=0x7f07003e;
         public static final int menu_item_delete_crime_single=0x7f07003f;
         public static final int menu_item_new_crime=0x7f070040;
+        public static final int menu_item_new_run=0x7f070045;
         public static final int menu_item_search=0x7f070042;
         public static final int menu_item_show_subtitle=0x7f070041;
         public static final int menu_item_toggle_polling=0x7f070044;
@@ -120,24 +121,25 @@ public final class R {
         public static final int activity_fragment=0x7f030003;
         public static final int activity_hello_moon=0x7f030004;
         public static final int activity_main_menu=0x7f030005;
-        public static final int activity_masterdetail=0x7f030017;
+        public static final int activity_masterdetail=0x7f030018;
         public static final int activity_nerd_launcher=0x7f030006;
         public static final int activity_quiz=0x7f030007;
-        public static final int activity_twopane=0x7f030008;
-        public static final int bottom_button_row=0x7f030009;
-        public static final int button_row=0x7f03000a;
-        public static final int dialog_date=0x7f03000b;
-        public static final int dialog_time=0x7f03000c;
-        public static final int fragment_crime=0x7f03000d;
-        public static final int fragment_crime_camera=0x7f03000e;
-        public static final int fragment_drag_and_draw=0x7f03000f;
-        public static final int fragment_hello_moon=0x7f030010;
-        public static final int fragment_photo_gallery=0x7f030011;
-        public static final int fragment_photo_page=0x7f030012;
-        public static final int fragment_remote_control=0x7f030013;
-        public static final int fragment_run=0x7f030014;
-        public static final int gallery_item=0x7f030015;
-        public static final int list_item_crime=0x7f030016;
+        public static final int activity_run_list=0x7f030008;
+        public static final int activity_twopane=0x7f030009;
+        public static final int bottom_button_row=0x7f03000a;
+        public static final int button_row=0x7f03000b;
+        public static final int dialog_date=0x7f03000c;
+        public static final int dialog_time=0x7f03000d;
+        public static final int fragment_crime=0x7f03000e;
+        public static final int fragment_crime_camera=0x7f03000f;
+        public static final int fragment_drag_and_draw=0x7f030010;
+        public static final int fragment_hello_moon=0x7f030011;
+        public static final int fragment_photo_gallery=0x7f030012;
+        public static final int fragment_photo_page=0x7f030013;
+        public static final int fragment_remote_control=0x7f030014;
+        public static final int fragment_run=0x7f030015;
+        public static final int gallery_item=0x7f030016;
+        public static final int list_item_crime=0x7f030017;
     }
     public static final class menu {
         public static final int book_apps=0x7f0a0000;
@@ -156,7 +158,9 @@ public final class R {
         public static final int quiz=0x7f0a000d;
         public static final int remote_control_actvity=0x7f0a000e;
         public static final int run=0x7f0a000f;
-        public static final int run_tracker=0x7f0a0010;
+        public static final int run_list=0x7f0a0010;
+        public static final int run_list_options=0x7f0a0011;
+        public static final int run_tracker=0x7f0a0012;
     }
     public static final class raw {
         public static final int apollo_17_stroll=0x7f050000;
@@ -166,7 +170,7 @@ public final class R {
         public static final int action_settings=0x7f080011;
         public static final int altitude=0x7f080055;
         public static final int app_name=0x7f080010;
-        public static final int app_name_blah=0x7f08005d;
+        public static final int app_name_blah=0x7f08005f;
         public static final int back_button=0x7f080004;
         public static final int book_app1=0x7f080005;
         public static final int book_app2=0x7f080006;
@@ -227,7 +231,7 @@ public final class R {
         public static final int gps_enabled=0x7f080059;
         public static final int hello_world=0x7f08001f;
         public static final int hellomoon_description=0x7f080035;
-        public static final int hellomoon_image_description=0x7f08005c;
+        public static final int hellomoon_image_description=0x7f08005e;
         public static final int hellomoon_pause=0x7f080032;
         public static final int hellomoon_play=0x7f080031;
         public static final int hellomoon_resume=0x7f080033;
@@ -242,6 +246,9 @@ public final class R {
         public static final int new_crime=0x7f080036;
         public static final int new_pictures_text=0x7f08004e;
         public static final int new_pictures_title=0x7f08004d;
+        /**  Chapter 34 
+         */
+        public static final int new_run=0x7f08005d;
         public static final int next_button=0x7f080015;
         public static final int previous_button=0x7f080016;
         public static final int question_africa=0x7f08001b;
@@ -261,7 +268,7 @@ public final class R {
         /**  Chapter 29 
          */
         public static final int start_polling=0x7f08004b;
-        /**  Chpater 33 
+        /**  Chapter 33 
          */
         public static final int started=0x7f080052;
         public static final int stop=0x7f080058;
@@ -284,6 +291,7 @@ public final class R {
         public static final int title_activity_photo_gallery=0x7f080047;
         public static final int title_activity_remote_control_actvity=0x7f080046;
         public static final int title_activity_run=0x7f080051;
+        public static final int title_activity_run_list=0x7f08005c;
         public static final int title_activity_run_tracker=0x7f080050;
         public static final int true_button=0x7f080013;
         public static final int warning_text=0x7f080023;

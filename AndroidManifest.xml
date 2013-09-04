@@ -9,9 +9,10 @@
         android:targetSdkVersion="18" />
 
     <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:required="true"
-		android:name="android.hardware.location.gps"/>
-    
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
     <permission
         android:name="com.bignerdranch.android.photogallery.PRIVATE"
         android:protectionLevel="signature" />
@@ -21,8 +22,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.bignerdranch.android.photogallery.PRIVATE" />
-	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-	
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -121,12 +122,14 @@
                 <action android:name="com.bignerdranch.android.photogallery.SHOW_NOTIFICATION" />
             </intent-filter>
         </receiver>
-		<receiver android:name=".TrackingLocationReceiver"
-			android:exported="false">
-			<intent-filter>
-				<action android:name="com.bignerdranch.android.runtracker.ACTION_LOCATION"/>
-			</intent-filter>
-		</receiver>
+        <receiver
+            android:name="com.example.androidtraining.TrackingLocationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.bignerdranch.android.runtracker.ACTION_LOCATION" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.example.androidtraining.DragAndDrawActivity"
             android:label="@string/title_activity_drag_and_draw" >
@@ -134,6 +137,10 @@
         <activity
             android:name="com.example.androidtraining.RunActivity"
             android:label="@string/title_activity_run" >
+        </activity>
+        <activity
+            android:name="com.example.androidtraining.RunListActivity"
+            android:label="@string/title_activity_run_list" >
         </activity>
     </application>
 

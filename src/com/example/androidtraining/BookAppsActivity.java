@@ -90,7 +90,7 @@ public class BookAppsActivity extends Activity {
 		mBookApp8.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(BookAppsActivity.this, RunActivity.class);
+				Intent i = new Intent(BookAppsActivity.this, RunListActivity.class);
 				startActivity(i);
 			}
 		});
