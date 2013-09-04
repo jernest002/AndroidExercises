@@ -97,7 +97,8 @@
                 android:value="com.example.androidtraining.SingleFragmentActivity" />
             
         </activity>
-        <activity android:name=".PhotoPageActivity" />
+        <activity android:name=".PhotoPageActivity"
+            	android:configChanges="keyboardHidden|orientation|screenSize" />
         <service android:name=".PollService" />
         <receiver android:name=".StartupReceiver">
 			<intent-filter>
