@@ -63,6 +63,7 @@ public class RunFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				mRunManager.startLocationUpdates();
+				mRun = new Run();
 				updateUI();
 			}
 		});

@@ -132,10 +132,6 @@
             android:label="@string/title_activity_drag_and_draw" >
         </activity>
         <activity
-            android:name="com.example.androidtraining.RunTracker"
-            android:label="@string/title_activity_run_tracker" >
-        </activity>
-        <activity
             android:name="com.example.androidtraining.RunActivity"
             android:label="@string/title_activity_run" >
         </activity>
