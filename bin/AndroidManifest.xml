@@ -97,6 +97,7 @@
                 android:value="com.example.androidtraining.SingleFragmentActivity" />
             
         </activity>
+        <activity android:name=".PhotoPageActivity" />
         <service android:name=".PollService" />
         <receiver android:name=".StartupReceiver">
 			<intent-filter>
