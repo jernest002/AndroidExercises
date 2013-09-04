@@ -2,6 +2,7 @@ package com.example.androidtraining;
 
 import java.util.ArrayList;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.IntentService;
 import android.app.Notification;
@@ -20,7 +21,13 @@ public class PollService extends IntentService{
 	
 	private static final String TAG = "PollService";
 	
-	public static final int POLL_INTERVAL = 1000 * 60 * 5; // 5 minutes
+	public static final int POLL_INTERVAL = 1000 * 15; // 5 minutes
+	public static final String PREF_IS_ALARM_ON = "isAlarmOn";
+	
+	public static final String ACTION_SHOW_NOTIFICATION =
+			"com.bignerdranch.android.photogallery.SHOW_NOTIFICATION";
+	public static final String PERM_PRIVATE =
+			"com.bignerdranch.android.photogallery.PRIVATE";
 	
 	public PollService() {
 		super(TAG);
@@ -55,8 +62,10 @@ public class PollService extends IntentService{
 		if (!resultId.equals(lastResultId)) {
 			Log.i(TAG, "Got a new result: " + resultId);
 			Resources r = getResources();
+			
 			PendingIntent pi = PendingIntent
 				.getActivity(this, 0, new Intent(this, PhotoGalleryActivity.class), 0);
+		
 			Notification notification = new NotificationCompat.Builder(this)
 				.setTicker(r.getString(R.string.new_pictures_title))
 				.setSmallIcon(android.R.drawable.ic_menu_report_image)
@@ -65,9 +74,8 @@ public class PollService extends IntentService{
 				.setContentIntent(pi)
 				.setAutoCancel(true)
 				.build();
-			NotificationManager notificationManager = (NotificationManager)
-			getSystemService(NOTIFICATION_SERVICE);
-			notificationManager.notify(0, notification);
+			
+			showBackgroundNotification(0, notification);
 		} else {
 			Log.i(TAG, "Got an old result: " + resultId);
 		}
@@ -93,6 +101,11 @@ public class PollService extends IntentService{
 			alarmManager.cancel(pi);
 			pi.cancel();
 		}
+		
+		PreferenceManager.getDefaultSharedPreferences(context)
+			.edit()
+			.putBoolean(PollService.PREF_IS_ALARM_ON, isOn)
+			.commit();
 	}
 
 	public static boolean isServiceAlarmOn(Context context) {
@@ -100,6 +113,14 @@ public class PollService extends IntentService{
 		PendingIntent pi = PendingIntent.getService(
 		context, 0, i, PendingIntent.FLAG_NO_CREATE);
 		return pi != null;
+	}
+	
+	void showBackgroundNotification(int requestCode, Notification notification) {
+		Intent i = new Intent(ACTION_SHOW_NOTIFICATION);
+		i.putExtra("REQUEST_CODE", requestCode);
+		i.putExtra("NOTIFICATION", notification);
+		sendOrderedBroadcast(i, PERM_PRIVATE, null, null,
+		Activity.RESULT_OK, null, null);
 	}
 	
 }
