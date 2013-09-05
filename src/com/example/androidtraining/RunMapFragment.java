@@ -106,7 +106,7 @@ public class RunMapFragment extends SupportMapFragment implements LoaderCallback
 		
 		// Stash a reference to the GoogleMap
 		mGoogleMap = getMap();
-		mGoogleMap.setLocationSource((LocationSource) this.getActivity());
+		mGoogleMap.setMyLocationEnabled(true);
 		return v;
 	}
 	
