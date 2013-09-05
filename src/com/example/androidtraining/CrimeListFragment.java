@@ -117,20 +117,20 @@ public class CrimeListFragment extends ListFragment {
 				}
 				
 				public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-					switch (item.getItemId()) {
-						case R.id.menu_item_delete_crime:
-							CrimeAdapter adapter = (CrimeAdapter)getListAdapter();
-							CrimeLab crimeLab = CrimeLab.get(getActivity());
-							for (int i = adapter.getCount() - 1; i >= 0; i--) {
-								if (getListView().isItemChecked(i)) {
-									crimeLab.deleteCrime(adapter.getItem(i));
-								}
+					int itemId = item.getItemId();
+					if (itemId == R.id.menu_item_delete_crime) {
+						CrimeAdapter adapter = (CrimeAdapter)getListAdapter();
+						CrimeLab crimeLab = CrimeLab.get(getActivity());
+						for (int i = adapter.getCount() - 1; i >= 0; i--) {
+							if (getListView().isItemChecked(i)) {
+								crimeLab.deleteCrime(adapter.getItem(i));
 							}
-							mode.finish();
-							adapter.notifyDataSetChanged();
-							return true;
-						default:
-							return false;
+						}
+						mode.finish();
+						adapter.notifyDataSetChanged();
+						return true;
+					} else {
+						return false;
 					}
 				}
 				public void onDestroyActionMode(ActionMode mode) {
@@ -153,27 +153,27 @@ public class CrimeListFragment extends ListFragment {
 	@TargetApi(11)
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case R.id.menu_item_new_crime:
-				Crime crime = new Crime();
-				CrimeLab.get(getActivity()).addCrime(crime);
-				((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
-				mCallbacks.onCrimeSelected(crime);
-				return true;
-			case R.id.menu_item_show_subtitle:
-				if (this.getActivity().getActionBar().getSubtitle() == null) {
-						this.getActivity().getActionBar().setSubtitle(R.string.subtitle);
-						mSubtitleVisible = true;
-						item.setTitle(R.string.hide_subtitle);
-					}
-					else {
-						this.getActivity().getActionBar().setSubtitle(null);
-						mSubtitleVisible = false;
-						item.setTitle(R.string.show_subtitle);
-					}
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+		int itemId = item.getItemId();
+		if (itemId == R.id.menu_item_new_crime) {
+			Crime crime = new Crime();
+			CrimeLab.get(getActivity()).addCrime(crime);
+			((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
+			mCallbacks.onCrimeSelected(crime);
+			return true;
+		} else if (itemId == R.id.menu_item_show_subtitle) {
+			if (this.getActivity().getActionBar().getSubtitle() == null) {
+					this.getActivity().getActionBar().setSubtitle(R.string.subtitle);
+					mSubtitleVisible = true;
+					item.setTitle(R.string.hide_subtitle);
+				}
+				else {
+					this.getActivity().getActionBar().setSubtitle(null);
+					mSubtitleVisible = false;
+					item.setTitle(R.string.show_subtitle);
+				}
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
 		}
 	}
 	
@@ -189,8 +189,8 @@ public class CrimeListFragment extends ListFragment {
 		CrimeAdapter adapter = (CrimeAdapter)getListAdapter();
 		Crime crime = adapter.getItem(position);
 		
-		switch (item.getItemId()) {
-		case R.id.menu_item_delete_crime:
+		int itemId = item.getItemId();
+		if (itemId == R.id.menu_item_delete_crime) {
 			CrimeLab.get(getActivity()).deleteCrime(crime);
 			adapter.notifyDataSetChanged();
 			return true;

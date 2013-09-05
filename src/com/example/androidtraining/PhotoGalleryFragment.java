@@ -121,26 +121,27 @@ public class PhotoGalleryFragment extends VisibleFragment {
 	@Override
 	@TargetApi(11)
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case R.id.menu_item_search:
-				getActivity().onSearchRequested();
-				return true;
-			case R.id.menu_item_clear:
-				PreferenceManager.getDefaultSharedPreferences(getActivity())
-					.edit()
-					.putString(FlickrFetchr.PREF_SEARCH_QUERY, null)
-					.commit();
-				updateItems();
-			case R.id.menu_item_toggle_polling:
-				boolean shouldStartAlarm = !PollService.isServiceAlarmOn(getActivity());
-				PollService.setServiceAlarm(getActivity(), shouldStartAlarm);
-				
-				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-					getActivity().invalidateOptionsMenu();
-				
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+		int itemId = item.getItemId();
+		if(itemId == R.id.menu_item_search){
+			getActivity().onSearchRequested();
+			return true;
+		} else if(itemId == R.id.menu_item_clear){
+			PreferenceManager.getDefaultSharedPreferences(getActivity())
+			.edit()
+			.putString(FlickrFetchr.PREF_SEARCH_QUERY, null)
+			.commit();
+			updateItems();
+			return true;
+		} else if(itemId == R.id.menu_item_toggle_polling){
+			boolean shouldStartAlarm = !PollService.isServiceAlarmOn(getActivity());
+			PollService.setServiceAlarm(getActivity(), shouldStartAlarm);
+			
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+				getActivity().invalidateOptionsMenu();
+	
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
 		}
 	}
 	

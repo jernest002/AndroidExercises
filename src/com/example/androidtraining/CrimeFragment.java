@@ -111,20 +111,20 @@ public class CrimeFragment extends Fragment {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case android.R.id.home:
-				if (NavUtils.getParentActivityName(getActivity()) != null) {
-					NavUtils.navigateUpFromSameTask(getActivity());
-				}
-				return true;
-			case R.id.menu_item_delete_crime_single :
-				CrimeLab.get(getActivity()).deleteCrime(mCrime);
-				if (NavUtils.getParentActivityName(getActivity()) != null) {
-					NavUtils.navigateUpFromSameTask(getActivity());
-				}
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
+		int itemId = item.getItemId();
+		if (itemId == android.R.id.home) {
+			if (NavUtils.getParentActivityName(getActivity()) != null) {
+				NavUtils.navigateUpFromSameTask(getActivity());
+			}
+			return true;
+		} else if (itemId == R.id.menu_item_delete_crime_single) {
+			CrimeLab.get(getActivity()).deleteCrime(mCrime);
+			if (NavUtils.getParentActivityName(getActivity()) != null) {
+				NavUtils.navigateUpFromSameTask(getActivity());
+			}
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
 		}
 	}
 	

@@ -38,13 +38,13 @@ public class RunListFragment extends ListFragment implements LoaderCallbacks<Cur
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case R.id.menu_item_new_run:
-				Intent i = new Intent(getActivity(), RunActivity.class);
-				startActivityForResult(i, REQUEST_NEW_RUN);
-				return true;
-			default:
-		return super.onOptionsItemSelected(item);
+		int itemId = item.getItemId();
+		if (itemId == R.id.menu_item_new_run) {
+			Intent i = new Intent(getActivity(), RunActivity.class);
+			startActivityForResult(i, REQUEST_NEW_RUN);
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
 		}
 	}
 	@Override
