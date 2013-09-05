@@ -18,6 +18,7 @@ import com.example.androidtraining.RunDatabaseHelper.LocationCursor;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
@@ -105,9 +106,7 @@ public class RunMapFragment extends SupportMapFragment implements LoaderCallback
 		
 		// Stash a reference to the GoogleMap
 		mGoogleMap = getMap();
-		
-		// Show the user's location
-		mGoogleMap.setMyLocationEnabled(true);
+		mGoogleMap.setLocationSource((LocationSource) this.getActivity());
 		return v;
 	}
 	
