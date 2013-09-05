@@ -1,5 +1,7 @@
 package com.example.androidtraining;
 
+import com.example.androidtraining.R;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;

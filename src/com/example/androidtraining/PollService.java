@@ -2,6 +2,8 @@ package com.example.androidtraining;
 
 import java.util.ArrayList;
 
+import com.example.androidtraining.R;
+
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.IntentService;

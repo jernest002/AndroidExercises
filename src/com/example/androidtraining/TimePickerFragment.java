@@ -3,6 +3,8 @@ package com.example.androidtraining;
 import java.util.Calendar;
 import java.util.Date;
 
+import com.example.androidtraining.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;

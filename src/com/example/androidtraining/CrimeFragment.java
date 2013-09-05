@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
+import com.example.androidtraining.R;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;

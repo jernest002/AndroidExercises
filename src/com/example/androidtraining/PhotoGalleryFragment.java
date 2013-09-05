@@ -2,6 +2,8 @@ package com.example.androidtraining;
 
 import java.util.ArrayList;
 
+import com.example.androidtraining.R;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.SearchManager;

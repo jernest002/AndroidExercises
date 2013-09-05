@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
+import com.example.androidtraining.R;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
