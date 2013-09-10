@@ -1,7 +1,5 @@
 package com.example.androidtraining;
 
-import com.example.androidtraining.R;
-
 import android.content.Context;
 import android.media.MediaPlayer;
 

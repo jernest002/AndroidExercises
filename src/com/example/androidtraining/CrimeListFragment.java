@@ -3,12 +3,8 @@ package com.example.androidtraining;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-import com.example.androidtraining.R;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -27,7 +23,6 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class CrimeListFragment extends ListFragment {
 	

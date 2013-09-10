@@ -4,8 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import com.example.androidtraining.R;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;

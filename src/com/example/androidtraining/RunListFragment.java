@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.androidtraining.R;
 import com.example.androidtraining.RunDatabaseHelper.RunCursor;
 
 public class RunListFragment extends ListFragment implements LoaderCallbacks<Cursor>{

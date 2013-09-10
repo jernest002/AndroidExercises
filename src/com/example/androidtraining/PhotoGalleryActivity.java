@@ -1,7 +1,5 @@
 package com.example.androidtraining;
 
-import com.example.androidtraining.R;
-
 import android.app.SearchManager;
 import android.content.Intent;
 import android.preference.PreferenceManager;

@@ -2,8 +2,6 @@ package com.example.androidtraining;
 
 import java.util.ArrayList;
 
-import com.example.androidtraining.R;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.SearchManager;
@@ -108,6 +106,8 @@ public class PhotoGalleryFragment extends VisibleFragment {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			// Pull out the SearchView
 			MenuItem searchItem = menu.findItem(R.id.menu_item_search);
+//					(MenuItem) this.getActivity().findViewById(R.id.menu_item_search);
+//					menu.findItem(R.id.menu_item_search);
 			SearchView searchView = (SearchView)searchItem.getActionView();
 			// Get the data from our searchable.xml as a SearchableInfo
 			SearchManager searchManager = (SearchManager)getActivity()

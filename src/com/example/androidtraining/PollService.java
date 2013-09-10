@@ -2,13 +2,10 @@ package com.example.androidtraining;
 
 import java.util.ArrayList;
 
-import com.example.androidtraining.R;
-
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.IntentService;
 import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
